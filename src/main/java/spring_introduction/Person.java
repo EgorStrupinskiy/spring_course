@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
-    @Autowired
- //   @Qualifier("dogBean")
+  //  @Autowired
+    @Qualifier("dogBean")
     private Pet pet;
   //  @Value("${person.surname}")
     private String surName;
@@ -17,17 +17,17 @@ public class Person {
     private int age;
 
     @Autowired
-//    public Person(@Qualifier("catBean") Pet pet) {
-//        System.out.println("Person bean is created");
-//        this.pet = pet;
-//    }
+    public Person(@Qualifier("catBean") Pet pet) {
+        System.out.println("Person bean is created");
+        this.pet = pet;
+    }
 
     public Person() {
         System.out.println("Person bean is created");
     }
 
     @Autowired
-//    @Qualifier("catBean")
+    @Qualifier("catBean")
     public void setPet(Pet pet) {
         System.out.println("Class Person: set pet");
         this.pet = pet;
