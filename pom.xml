@@ -32,6 +32,13 @@
       <version>5.3.15</version>
     </dependency>
 
+    <!-- Hibernate -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.6.0.Final</version>
+    </dependency>
+
     <dependency>
       <groupId>javax.annotation</groupId>
       <artifactId>javax.annotation-api</artifactId>
@@ -44,6 +51,7 @@
       <version>4.12</version>
       <scope>compile</scope>
     </dependency>
+
 
 
   </dependencies>
